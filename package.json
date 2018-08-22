@@ -1,0 +1,9 @@
+{
+  "name": "react-app-node-backend-heroku-ready",
+  "version": "1.0.0",
+  "scripts": {
+    "postinstall": "cd equalDataService && npm install",
+    "start": "cd equalDataService && npm run start",
+    "heroku-postbuild": "cd dataService && npm run heroku-postbuild"
+  }
+}
