@@ -2,10 +2,10 @@
 Instantly get a prooduction ready website up on Heroku.
 
 ## Tech Stack
-* React
-* Styled-components
-* Express
-* Heroku-ready
+* [React] (https://github.com/facebook/react)
+* [Styled components] (https://github.com/styled-components/styled-components)
+* [Express] (https://github.com/expressjs/express)
+* [Heroku-ready] (https://www.heroku.com/)
 
 ## Usage
 Install all the required packages:
