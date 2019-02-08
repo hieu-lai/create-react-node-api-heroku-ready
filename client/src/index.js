@@ -1,27 +1,20 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { injectGlobal } from 'styled-components'
-import styledNormalize from 'styled-normalize'
+import { ThemeProvider } from 'styled-components'
 import registerServiceWorker from './registerServiceWorker'
 import App from './router/AppRouter'
+import GlobalStyle from './styles/GlobalStyle'
+import theme from './styles/Theme';
 
-injectGlobal`
-  ${styledNormalize}
+const jsx = (
+  <ThemeProvider theme={theme}>
+    <React.Fragment>
+      <App />
+      <GlobalStyle />
+    </React.Fragment>
+  </ThemeProvider>
 
-  * {
-    box-sizing: border-box;
-  }
+)
 
-  html {
-    font-size: 62.5%; 
-  }
-
-  body {
-    font-family: 'Montserrat', sans-serif; 
-    -webkit-font-smoothing: antialiased;
-  }
-
-`
-
-ReactDOM.render(<App />, document.getElementById('root'))
+ReactDOM.render(jsx, document.getElementById('root'))
 registerServiceWorker()

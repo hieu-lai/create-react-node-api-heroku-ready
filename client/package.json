@@ -6,19 +6,25 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "upgrade-all": "yarn add react react-dom react-router-dom react-scripts styled-components styled-normalize && yarn add babel-plugin-styled-components -D"
   },
   "dependencies": {
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4",
-    "styled-components": "^3.4.4",
-    "styled-normalize": "^8.0.0"
+    "react-scripts": "^2.1.3",
+    "styled-components": "^4.1.3",
+    "styled-normalize": "^8.0.6"
   },
   "devDependencies": {
-    "babel-plugin-styled-components": "^1.5.1"
+    "babel-plugin-styled-components": "^1.10.0"
   },
-  "proxy": "http://localhost:5000/"
+  "proxy": "http://localhost:5000/",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

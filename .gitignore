@@ -3,7 +3,7 @@
 # dependencies
 /node_modules
 /client/node_modules
-/dataService/node_modules
+/server/node_modules
 
 # testing
 /coverage
@@ -17,7 +17,7 @@
 .env.development.local
 .env.test.local
 .env.production.local
-/dataService/.env.development
+/server/.env.development
 /client/.env.development
 /client/.env
 
